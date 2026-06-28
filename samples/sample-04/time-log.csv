@@ -1,2 +1,6 @@
 date,task,manual_minutes,automated_minutes,time_saved,notes
-[TODO: fill in after your first run],[TODO: task name],[TODO: how long it used to take],[TODO: how long with Claude],[TODO: difference],
+2025-06-25,Extract actions from sprint review meeting,20,1,19,9 actions extracted correctly
+2025-06-25,Extract actions from client call,20,1,19,6 actions extracted
+2025-06-26,Extract actions from design review,20,1,19,4 actions extracted
+2025-06-26,Extract actions from 1-on-1 standup,20,1,19,3 actions extracted
+2025-06-27,Extract actions from quarterly planning,20,1,19,14 actions extracted

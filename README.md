@@ -10,9 +10,23 @@
 
 The Skill + the Cowork automation + a 5-step Loom + a measured before/after time log.
 
-## Pick a problem statement
+## No API key needed
 
-Choose **one** of these real use-cases — or bring your own (get it approved first):
+Everything here runs on your normal **Claude.ai subscription** (Pro or Team — these include **Skills** and **Cowork**). You do not need an API key, a credit card, or a terminal. Each sample folder has a `README.md` with a copy-paste **example prompt** and numbered, plain-language steps under **"Use it with your Claude.ai subscription."**
+
+## Pick a sample — each one is ready to use
+
+These are **not blank templates**. Each folder below already contains a complete, working Skill (`skill.md`), a complete Cowork recipe (`automation-playbook.md`), a sample data file, and a `time-log.csv`. Open one, copy it into Claude.ai, run it, then adapt it to your own work.
+
+| # | Sample | What it does |
+|---|--------|--------------|
+| 1 | [Weekly Client Status Report](samples/sample-01/) | Turns rough project notes into a polished client report |
+| 2 | [Inbox Triage & Draft](samples/sample-02/) | Categorises messages, sets priority, drafts replies |
+| 3 | [Monthly Metrics Deck](samples/sample-03/) | Turns a KPI table into a 5-slide review outline |
+| 4 | [Meeting Action Extractor](samples/sample-04/) | Pulls owned, dated actions out of messy notes |
+| 5 | [Content Repurposer](samples/sample-05/) | Turns one article into social posts + a newsletter blurb |
+
+Pick **one** of these real use-cases for your portfolio piece — or bring your own (get it approved first):
 
 1. Every Friday you rebuild the same client status report by hand and it eats an hour. Turn your report template into a reusable Skill and have Cowork run it weekly against the latest data, no code. Success: the report generates itself in your template format and you log the before/after time, showing at least an hour a week saved.
 
@@ -27,8 +41,9 @@ Choose **one** of these real use-cases — or bring your own (get it approved fi
 ## How to use this repo
 
 1. Click **Use this template** to create your own copy.
-2. Build your chosen project in your copy.
-3. Replace this section of the README with: what you built, the problem it solves, and how to run it.
+2. Open the sample closest to your problem and follow its `README.md` — copy the example prompt into Claude.ai, save it as a Skill, then wire up the Cowork automation. No API key required.
+3. Swap in your own data, run it end-to-end, and fill in `time-log.csv` with your before/after times.
+4. Replace this section of the README with: what you built, the problem it solves, and how to run it.
 
 ---
 

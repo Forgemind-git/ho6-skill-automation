@@ -1,2 +1,6 @@
 date,task,manual_minutes,automated_minutes,time_saved,notes
-[TODO: fill in after your first run],[TODO: task name],[TODO: how long it used to take],[TODO: how long with Claude],[TODO: difference],
+2025-07-01,Monthly metrics deck - Growth & Revenue team,210,5,205,First automated run
+2025-07-01,Monthly metrics deck - Product team,210,5,205,
+2025-07-01,Monthly metrics deck - Operations team,210,5,205,
+2025-08-01,Monthly metrics deck - Growth & Revenue team,210,5,205,Second month run
+2025-08-01,Monthly metrics deck - Product team,210,5,205,
