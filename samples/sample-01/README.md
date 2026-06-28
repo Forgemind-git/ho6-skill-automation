@@ -1,37 +1,21 @@
-# Sample 01 — Weekly Client Status Report Skill
+# HO6 Sample 1 — client status report
 
-## Problem Statement
+## Your task
+Every Friday you rebuild the same client status report by hand. Turn your report template into a reusable Claude Skill and automate the full generation in Cowork.
 
-Account managers spend 30–45 minutes every Friday manually writing status reports for each client — pulling data from spreadsheets, rewriting bullet points, and formatting emails. With 10+ clients, that is half a workday lost to copy-paste work that Claude can do in under 60 seconds.
+## What you will build
+A Claude Skill (reusable prompt template) + a Cowork automation
 
-## What the Skill Does
+## Step 1: Build the Skill
+1. Open claude.ai → Skills → New Skill
+2. Give it a name: "[TODO: your skill name]"
+3. Write the skill instructions using skill-template.md as your guide
+4. Test it with a sample input
 
-The **Weekly Client Status Report Skill** takes a raw data table (pasted from a spreadsheet or CRM export) and produces a polished, client-ready status report with four sections:
+## Step 2: Build the Cowork automation
+1. Open a Cowork session in Claude.ai
+2. Follow the steps in cowork-playbook.md
+3. Run through it end-to-end with real data
 
-1. **Summary** — one-paragraph overview of the week
-2. **Highlights** — 3–5 bullet points of positive progress
-3. **Blockers** — any issues requiring attention, with suggested owner
-4. **Next Week Actions** — prioritised task list with owners and due dates
-
-The output is formatted for direct copy-paste into an email or Notion page. No manual editing required for standard weeks.
-
-## What the Automation Does
-
-The `automation-playbook.md` describes how to connect this Skill to a Google Sheets trigger in Claude Cowork:
-
-- Every Friday at 4 PM, a Cowork automation reads the weekly project data sheet
-- Passes each client row to this Skill
-- Outputs a formatted report per client into a shared Notion database
-- Sends a Slack notification to the account manager with a link
-
-## Time Savings Evidence
-
-| Metric | Before | After |
-|--------|--------|-------|
-| Time per report | 35 min | 2 min (review only) |
-| Reports per week | 12 | 12 |
-| Total time per week | 7 hr | 24 min |
-| Hours saved per week | **6.6 hr** | — |
-| Hours saved per month | **~26 hr** | — |
-
-See `time-log.csv` for a running log template to track your own savings.
+## Required subscription
+Claude.ai Pro or Team (Cowork + Skills access)

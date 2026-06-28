@@ -1,39 +1,21 @@
-# Sample 03 — Monthly Metrics Deck Skill
+# HO6 Sample 3 — metrics deck
 
-## Problem Statement
+## Your task
+Your manager wants a metrics deck every month and turning the sheet into slides is tedious. Build a Cowork automation.
 
-Every month, managers and analysts spend 3–5 hours building slide decks from metrics spreadsheets. They extract numbers, write commentary, identify trends, and design slides — all repetitive work that follows the same pattern each month. Claude can turn a metrics table into a complete, narrative slide deck outline in under 90 seconds, ready to paste into PowerPoint or Google Slides.
+## What you will build
+A Claude Skill (reusable prompt template) + a Cowork automation
 
-## What the Skill Does
+## Step 1: Build the Skill
+1. Open claude.ai → Skills → New Skill
+2. Give it a name: "[TODO: your skill name]"
+3. Write the skill instructions using skill-template.md as your guide
+4. Test it with a sample input
 
-The **Monthly Metrics Deck Skill** takes a raw metrics table (actual vs target values for the month) and produces a complete 5-slide deck outline:
+## Step 2: Build the Cowork automation
+1. Open a Cowork session in Claude.ai
+2. Follow the steps in cowork-playbook.md
+3. Run through it end-to-end with real data
 
-1. **Executive Summary** — one headline number and a 2-sentence verdict
-2. **KPIs vs Target** — a formatted comparison table with RAG status for each metric
-3. **Highlights** — the top 3 wins with context explaining why they matter
-4. **Risks** — the top 2–3 risks with recommended mitigations
-5. **Next Month Focus** — 3 prioritised actions with owners
-
-Each slide includes a suggested title, speaker notes, and a one-line chart/visual recommendation.
-
-## What the Automation Does
-
-The `automation-playbook.md` describes how to connect this Skill to a scheduled monthly trigger in Claude Cowork:
-
-- On the first working day of each month, the automation reads the metrics from a Google Sheet
-- Passes the data to this Skill
-- Writes the deck outline to a Notion document
-- Creates a Google Slides deck with the slide titles pre-filled
-- Notifies the team lead via email
-
-## Time Savings Evidence
-
-| Metric | Before | After |
-|--------|--------|-------|
-| Time to build deck outline | 3.5 hr | 5 min (review + edit) |
-| Decks per month | 3 (three teams) | 3 |
-| Total time per month | 10.5 hr | 15 min |
-| Hours saved per month | **10.25 hr** | — |
-| Hours saved per year | **~123 hr** | — |
-
-See `time-log.csv` for a running log template to track your own savings.
+## Required subscription
+Claude.ai Pro or Team (Cowork + Skills access)

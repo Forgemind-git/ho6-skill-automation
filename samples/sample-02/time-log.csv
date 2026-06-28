@@ -1,6 +1,2 @@
 date,task,manual_minutes,automated_minutes,time_saved,notes
-2025-06-27,Triage and draft - billing query (James Carter),8,1,7,Billing category correctly identified
-2025-06-27,Triage and draft - API error urgent (Priya Singh),8,1,7,Correctly flagged as Priority 1 + escalate
-2025-06-27,Triage and draft - account question (Dan Howell),8,1,7,General category draft was accurate
-2025-06-27,Triage and draft - refund request,8,1,7,
-2025-06-27,Triage and draft - password reset help,8,1,7,
+[TODO: fill in after your first run],[TODO: task name],[TODO: how long it used to take],[TODO: how long with Claude],[TODO: difference],

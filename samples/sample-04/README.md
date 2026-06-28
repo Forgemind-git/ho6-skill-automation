@@ -1,37 +1,21 @@
-# Sample 04 — Meeting Action Extractor Skill
+# HO6 Sample 4 — meeting actions
 
-## Problem Statement
+## Your task
+Action items from meetings get lost in messy notes. Build a reusable Skill that turns raw notes into a structured action list.
 
-After every meeting, someone has to scroll through notes, highlight action items, figure out who owns each one, decide deadlines, and paste them into a task manager. This takes 15–25 minutes per meeting and the result is often incomplete — vague actions with no owner or no date. Claude can extract every action item from raw meeting notes in seconds, producing a clean, structured table ready to import into any task tool.
+## What you will build
+A Claude Skill (reusable prompt template) + a Cowork automation
 
-## What the Skill Does
+## Step 1: Build the Skill
+1. Open claude.ai → Skills → New Skill
+2. Give it a name: "[TODO: your skill name]"
+3. Write the skill instructions using skill-template.md as your guide
+4. Test it with a sample input
 
-The **Meeting Action Extractor Skill** reads raw meeting notes (transcript excerpt, bullet notes, or prose) and returns a structured table of action items with:
+## Step 2: Build the Cowork automation
+1. Open a Cowork session in Claude.ai
+2. Follow the steps in cowork-playbook.md
+3. Run through it end-to-end with real data
 
-- **Action** — clear, specific task starting with a verb
-- **Owner** — the person or team responsible
-- **Due Date** — extracted from notes or inferred as [next meeting / end of week / TBC]
-- **Priority** — `High`, `Medium`, or `Low` based on context signals in the notes
-
-The output is a Markdown table and a JSON array so it can be used directly in task management tools (Linear, Jira, Asana, Notion, etc.).
-
-## What the Automation Does
-
-The `automation-playbook.md` describes how to connect this Skill to a meeting tool trigger in Claude Cowork:
-
-- When a meeting recording is transcribed (via Otter.ai, Fireflies, or a Zoom webhook), the transcript is passed to this Skill
-- Extracted actions are automatically created as tasks in Linear or Notion
-- A Slack summary is posted to the meeting attendees channel
-- The meeting host receives an email with the full action table
-
-## Time Savings Evidence
-
-| Metric | Before | After |
-|--------|--------|-------|
-| Time to extract actions per meeting | 20 min | 1 min (review) |
-| Meetings per week | 8 | 8 |
-| Total time per week | 2.7 hr | 8 min |
-| Hours saved per week | **2.5 hr** | — |
-| Hours saved per month | **~10 hr** | — |
-
-See `time-log.csv` for a running log template to track your own savings.
+## Required subscription
+Claude.ai Pro or Team (Cowork + Skills access)
