@@ -10,6 +10,22 @@
 
 The Skill + the Cowork automation + a 5-step Loom + a measured before/after time log.
 
+## No API key needed
+
+Everything in this hands-on runs on your **Claude.ai subscription** (Pro or Team — these include **Skills** and **Cowork**). No API key, no billing signup, no terminal. Each sample folder has a fully worked Skill (`skill.md`), a step-by-step Cowork recipe (`automation-playbook.md`), and a `README.md` with a copy-paste **example prompt** under **"Use it with your Claude.ai subscription."**
+
+## Reference samples
+
+This `main` branch is the polished answer key. Browse the five worked examples:
+
+| # | Sample | What it does |
+|---|--------|--------------|
+| 1 | [Weekly Client Status Report](samples/sample-01/) | Turns rough project notes into a polished client report |
+| 2 | [Inbox Triage & Draft](samples/sample-02/) | Categorises messages, sets priority, drafts replies |
+| 3 | [Monthly Metrics Deck](samples/sample-03/) | Turns a KPI table into a 5-slide review outline |
+| 4 | [Meeting Action Extractor](samples/sample-04/) | Pulls owned, dated actions out of messy notes |
+| 5 | [Content Repurposer](samples/sample-05/) | Turns one article into social posts + a newsletter blurb |
+
 ## Pick a problem statement
 
 Choose **one** of these real use-cases — or bring your own (get it approved first):

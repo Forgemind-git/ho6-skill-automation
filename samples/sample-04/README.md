@@ -24,6 +24,45 @@ The `automation-playbook.md` describes how to connect this Skill to a meeting to
 - A Slack summary is posted to the meeting attendees channel
 - The meeting host receives an email with the full action table
 
+## Use it with your Claude.ai subscription
+
+No API key needed — this runs entirely on your Claude.ai subscription (Pro or Team, which include Skills and Cowork).
+
+1. **See it work first.** Open **Claude.ai**, start a new chat, and paste **the example prompt** below. Claude returns a clean action table and a JSON list.
+2. **Save it as a Skill.** Open the **Skills** menu → **Create Skill**, name it `Meeting Action Extractor`, and paste in the full contents of `skill.md`. Save.
+3. **Use it any time.** In a chat, type `/`, choose **Meeting Action Extractor**, and paste your own meeting notes.
+4. **Automate it (optional).** Follow `automation-playbook.md` to have Cowork read each transcript (Fireflies, Otter, or Zoom) and create tasks in Linear or Notion automatically.
+
+## The example prompt
+
+Copy this into Claude.ai to reproduce the worked example in `skill.md`:
+
+```
+You are an expert meeting coordinator. From the notes below, extract EVERY genuine action item someone committed to. Ignore general discussion. Rewrite each action as a clear, verb-first task. For each, find the owner (use the team name if no person, or [Owner TBC] if unknown), the due date (keep relative dates like "by Friday" exactly as stated; use TBC if none — never invent a date), and a priority (High = blocking/customer-facing/urgent, Medium = important, Low = nice to have). Return a Markdown table first (columns: #, Action, Owner, Due Date, Priority), then an identical JSON array.
+
+Meeting: Product Sprint Review + Planning
+Date: June 25, 2025
+Attendees: Riya (PM), Carlos (Backend), Nina (Frontend), Jake (Design), Tom (QA)
+
+Notes:
+- Reviewed sprint 14 — 8/10 tickets done.
+- Carlos flagged the payment gateway is timing out under load. He'll investigate connection pooling and send Riya an update by end of day Thursday.
+- Nina said the mobile nav has a bug on iOS 16 — she'll fix it and push a PR by tomorrow EOD.
+- Jake will share the updated onboarding designs in Figma by end of this week; they need Riya's sign-off before dev starts.
+- Tom raised the regression suite hasn't been updated since March; he'll add coverage for the billing module by next Wednesday.
+- ACTION: Riya to schedule the Q3 roadmap planning session next week.
+- The team discussed a new testing framework but agreed to defer the decision. No action needed.
+- Carlos to review Jake's designs in Figma and leave comments by Friday.
+```
+
+The full example output is in `skill.md` under **Example Output**.
+
+## Make it your own
+
+- Paste in your own real meeting notes — the messier, the better a test.
+- Add a column your team needs (e.g. **Project** or **Linear label**) by editing `skill.md`.
+- Tell the Skill to ignore certain owners (e.g. external clients) so only internal tasks come through.
+
 ## Time Savings Evidence
 
 | Metric | Before | After |
